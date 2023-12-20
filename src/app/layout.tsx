@@ -20,7 +20,7 @@ export default function RootLayout({
   return (
     <html lang="en">
       <head>
-        <base href="{{https://harshit-vavaiya.github.io/}}" />
+{/*         <base href="{{https://harshit-vavaiya.github.io/}}" /> */}
       </head>
       <body className={poppins.className}>{children}</body>
     </html>
