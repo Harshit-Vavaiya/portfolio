@@ -1,6 +1,6 @@
 import type { Metadata } from "next";
 import { Poppins } from "next/font/google";
-import "/Harshit-Vavaiya/src/app/globals.css";
+import "/src/app/globals.css";
 
 const poppins = Poppins({
   weight: ["400", "500", "600", "700", "800", "900"],
@@ -19,6 +19,9 @@ export default function RootLayout({
 }) {
   return (
     <html lang="en">
+      <head>
+        <base href="{{https://harshit-vavaiya.github.io/}}" />
+      </head>
       <body className={poppins.className}>{children}</body>
     </html>
   );
