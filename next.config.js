@@ -1,6 +1,11 @@
 /** @type {import('next').NextConfig} */
-const nextConfig = {
-    target: 'experimental-serverless-trace',
-}
+const repo = 'Harshit-Vavaiya.github.io'
+const assetPrefix = `/${repo}/`
+const basePath = `/${repo}`
 
+const nextConfig = {
+  assetPrefix: assetPrefix,
+  basePath: basePath,
+  output:"export"
+}
 module.exports = nextConfig
