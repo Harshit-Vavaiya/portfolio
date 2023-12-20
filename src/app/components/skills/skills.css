@@ -1,0 +1,8 @@
+.tooltip {
+  display: none;
+}
+
+.tooltip-container:hover .tooltip {
+  display: grid;
+  cursor: pointer;
+}
