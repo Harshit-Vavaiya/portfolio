@@ -15,7 +15,7 @@ export default function Cursor() {
     };
 
     const onMouseEnterLink = (event: any) => {
-      gsap.to(cursor, { scale: 3 });
+      gsap.to(cursor, { scale: 4 });
     };
     const onMouseLeaveLink = (event: any) => {
       gsap.to(cursor, { scale: 1 });
@@ -36,7 +36,7 @@ export default function Cursor() {
     });
   });
   return (
-    <div id="custom-cursor" className="custom-cursor">
+    <div id="custom-cursor" className="custom-cursor none lg:flex z-10">
       <span className="cursor-text">View</span>
     </div>
   );

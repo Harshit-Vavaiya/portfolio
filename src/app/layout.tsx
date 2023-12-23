@@ -20,11 +20,13 @@ export default function RootLayout({
 }) {
   return (
     <html lang="en">
-      <Cursor></Cursor>
       <head>
         {/*         <base href="{{https://harshit-vavaiya.github.io/}}" /> */}
       </head>
-      <body className={poppins.className}>{children}</body>
+      <body className={poppins.className}>
+        <Cursor></Cursor>
+        {children}
+      </body>
     </html>
   );
 }
