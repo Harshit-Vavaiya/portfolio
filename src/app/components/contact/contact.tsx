@@ -6,7 +6,7 @@ export const Contact: React.FC<any> = (props: any) => {
       id="contact"
       className="h-auto w-[85vw]  m-auto grid items-center tracking-tight text-center"
     >
-      <div className="text-3xl leading-normal font-bold md:w-[80%] md:m-auto lg:text-4xl lg:leading-normal lg:w-[70%]">
+      <div className="text-3xl leading-normal font-bold md:w-[80%] md:m-auto lg:text-4xl lg:leading-normal lg:w-[70%] text">
         If you would like to get in touch 😄{" "}
         <Link
           href={"mailto:harshitvavaiya9@gmail.com"}

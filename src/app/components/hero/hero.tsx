@@ -33,7 +33,7 @@ export default function Hero(props: any) {
         <span>Hallo! I&apos;m</span>
         <span className="label">Harshit</span>
       </div>
-      <div className="text-2xl   text-[#6C6464] leading-relaxed lg:text-[33px] lg:leading-relaxed lg:w-[90%]">
+      <div className="text-2xl   text-[#6C6464] leading-relaxed lg:text-[33px] lg:leading-relaxed lg:w-[90%] text">
         I am a <Label color="text-[#C8346B]">Full stack developer</Label>. I
         live in the lovely town of{" "}
         <Label color="text-[#C84F34]">Bamberg, Germany</Label> 🏠. I am doing my{" "}
