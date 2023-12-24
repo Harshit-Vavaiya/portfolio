@@ -1,7 +1,10 @@
 .tooltip {
   display: none;
+  cursor: none;
+  transition: 400ms;
 }
 
 .tooltip-container:hover .tooltip {
   display: grid;
+  transition: 600ms;
 }

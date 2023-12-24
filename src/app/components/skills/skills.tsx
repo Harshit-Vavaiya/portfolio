@@ -25,7 +25,7 @@ export default function Skills(props: any) {
   return (
     <section className="h-auto w-[85vw] m-auto flex flex-col gap-[40px] tracking-tight">
       <div className="flex flex-col gap-[60px] md:hidden">
-        <div className="text-2xl w-[90%] m-auto  text-center  text-[#6C6464] leading-relaxed">
+        <div className="text-2xl w-[90%] m-auto  text-center  text-[#57606a] leading-relaxed">
           &ldquo;Skills shape the path, versatility paves the way.&rdquo;
         </div>
         <div className="flex flex-col gap-5 m-auto">
