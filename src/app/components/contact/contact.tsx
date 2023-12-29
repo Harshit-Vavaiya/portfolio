@@ -10,23 +10,23 @@ export const Contact: React.FC<any> = (props: any) => {
         If you would like to get in touch 😄{" "}
         <Link
           href={"mailto:harshitvavaiya9@gmail.com"}
-          className="text-[#C8346B] hover:underline"
+          className="text-[#C8346B] underline hover:text-[#FFD772]"
         >
           email me
         </Link>
         . I would love to connect with you on{" "}
         <Link
           href={"https://www.linkedin.com/in/harshitvavaiya/"}
-          className="text-[#34A4C8] hover:underline"
+          className="text-[#34A4C8] underline hover:text-[#FFD772]"
         >
           LinkedIn
         </Link>{" "}
         or{" "}
         <Link
-          href={"https://www.instagram.com/harshitvavaiya/"}
-          className="text-[#C83434] hover:underline"
+          href={"https://harshitvavaiya.medium.com/"}
+          className="text-[#C83434] underline hover:text-[#FFD772]"
         >
-          Instagram
+          Medium
         </Link>
         .
       </div>

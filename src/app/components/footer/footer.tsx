@@ -2,7 +2,7 @@ import Image from "next/image";
 import Link from "next/link";
 import logo from "/public/images/logo.png";
 import linkedin from "/public/images/linkedin.svg";
-import instagram from "/public/images/instagram.svg";
+import medium from "/public/images/medium.svg";
 import github from "/public/images/github.svg";
 
 export default function Footer(props: any) {
@@ -37,8 +37,8 @@ export default function Footer(props: any) {
             <Link href={"https://github.com/Harshit-Vavaiya"}>
               <Image src={github} alt="github"></Image>
             </Link>
-            <Link href={"https://www.instagram.com/harshitvavaiya/"}>
-              <Image src={instagram} alt="instagram"></Image>
+            <Link href={"https://www.medium.com/harshitvavaiya/"}>
+              <Image src={medium} alt="medium"></Image>
             </Link>
           </div>
         </div>
@@ -72,13 +72,13 @@ export default function Footer(props: any) {
           <Link href={"https://github.com/Harshit-Vavaiya"}>
             <Image src={github} alt="github"></Image>
           </Link>
-          <Link href={"https://www.instagram.com/harshitvavaiya/"}>
-            <Image src={instagram} alt="instagram"></Image>
+          <Link href={"https://harshitvavaiya.medium.com/"}>
+            <Image src={medium} alt="medium"></Image>
           </Link>
         </div>
       </div>
       <div className="absolute bottom-2 text-center w-[87vw] text-[#3d3d3d]">
-        Copyright © 2022 Harshit Vavaiya
+        Copyright © 2024 Harshit Vavaiya
       </div>
     </footer>
   );
