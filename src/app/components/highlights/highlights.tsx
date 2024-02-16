@@ -2,6 +2,7 @@
 import ats from "/public/images/ats.png";
 import tag from "/public/images/tag.png";
 import prost from "/public/images/prost.png";
+import techkesari from "/public/images/techkesari.png";
 import edith from "/public/images/edith.png";
 import Image, { StaticImageData } from "next/image";
 import { useState } from "react";
@@ -12,9 +13,18 @@ const data = [
     image: tag,
     description:
       "For students of graph theory. online platform to visualize and draw graphs and execute algorithms.",
-    year: "2023",
-    link: "#",
+    year: "Ongoing",
+    link: "https://tag-initial.vercel.app/",
     tags: ["ReactJS", "GraphTheory", "Algorithms"],
+  },
+  {
+    title: "Tech Kesari",
+    image: techkesari,
+    description:
+      "An AI Development Company where efficiency meets innovation. Providing wide array of cutting edge and bespoke AI solutions to the customers. ",
+    year: "Ongoing",
+    link: "https://www.techkesari.com/",
+    tags: ["NextJS", "GSAP", "Freelancing"],
   },
   {
     title: "ATS",
@@ -69,13 +79,15 @@ interface HighlightCardProps {
   tags: Array<string>;
   title: string;
   year: string;
-  description: string; // Change here to use description directly
+  description: string;
+  link: string; // Change here to use description directly
 }
 
 const HighlightCard: React.FC<HighlightCardProps> = ({
   image,
   tags,
   title,
+  link,
   year,
   description,
 }) => {
@@ -126,7 +138,12 @@ const HighlightCard: React.FC<HighlightCardProps> = ({
             })}
           </div>
           <div className="flex items-center justify-stretch w-full text-[#d7d7d7]">
-            <span className="text-3xl font-bold flex-1">{title}</span>
+            <a
+              href={link}
+              className="text-3xl font-bold flex-1 hover:underline"
+            >
+              {title}
+            </a>
             <span className="text-md font-extralight flex-1 text-right">
               {year}
             </span>
