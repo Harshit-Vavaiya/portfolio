@@ -57,7 +57,7 @@ export default function Footer(props: any) {
           </div>
           <div className="flex flex-col gap-[5px]">
             <div className="font-bold">Resume</div>
-            <Link href="#" className="hover:text-white">
+            <Link href={"/CV.pdf"} className="hover:text-white">
               Download CV
             </Link>
           </div>
