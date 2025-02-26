@@ -56,10 +56,10 @@ export default function Footer(props: any) {
             </Link>
           </div>
           <div className="flex flex-col gap-[5px]">
-            <div className="font-bold">Resume</div>
-            <Link href={"/CV.pdf"} className="hover:text-white">
-              Download CV
-            </Link>
+            {/* <div className="font-bold">Resume</div> */}
+            {/* <Link href={"/CV.pdf"} className="hover:text-white">
+                Download CV
+              </Link> */}
           </div>
         </div>
         <div className="flex-1/3">
