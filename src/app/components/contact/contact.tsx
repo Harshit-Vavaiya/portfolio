@@ -20,13 +20,6 @@ export const Contact: React.FC<any> = (props: any) => {
           className="text-[#34A4C8] underline hover:text-[#FFD772]"
         >
           LinkedIn
-        </Link>{" "}
-        or{" "}
-        <Link
-          href={"https://harshitvavaiya.medium.com/"}
-          className="text-[#C83434] underline hover:text-[#FFD772]"
-        >
-          Medium
         </Link>
         .
       </div>

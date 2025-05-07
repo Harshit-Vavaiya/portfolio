@@ -23,12 +23,12 @@ export default function Footer(props: any) {
                 Email Me
               </Link>
             </div>
-            <div className="flex flex-col gap-[5px]">
+            {/* <div className="flex flex-col gap-[5px]">
               <div className="font-bold">Resume</div>
               <Link href="#" className="hover:text-white">
                 Download CV
               </Link>
-            </div>
+            </div> */}
           </div>
           <div className="flex gap-[20px]">
             <Link href={"https://www.linkedin.com/in/harshitvavaiya/"}>
@@ -37,9 +37,9 @@ export default function Footer(props: any) {
             <Link href={"https://github.com/Harshit-Vavaiya"}>
               <Image src={github} alt="github"></Image>
             </Link>
-            <Link href={"https://www.medium.com/harshitvavaiya/"}>
+            {/* <Link href={"https://www.medium.com/harshitvavaiya/"}>
               <Image src={medium} alt="medium"></Image>
-            </Link>
+            </Link> */}
           </div>
         </div>
       </div>
@@ -72,9 +72,9 @@ export default function Footer(props: any) {
           <Link href={"https://github.com/Harshit-Vavaiya"}>
             <Image src={github} alt="github"></Image>
           </Link>
-          <Link href={"https://harshitvavaiya.medium.com/"}>
+          {/* <Link href={"https://harshitvavaiya.medium.com/"}>
             <Image src={medium} alt="medium"></Image>
-          </Link>
+          </Link> */}
         </div>
       </div>
       <div className="absolute bottom-2 text-center w-[87vw] text-[#3d3d3d]">
