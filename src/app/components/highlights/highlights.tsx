@@ -13,7 +13,7 @@ const data = [
     image: tag,
     description:
       "For students of graph theory. online platform to visualize and draw graphs and execute algorithms.",
-    year: "Ongoing",
+    year: "2024",
     link: "https://tag-initial.vercel.app/",
     tags: ["ReactJS", "GraphTheory", "Algorithms"],
   },
@@ -22,7 +22,7 @@ const data = [
     image: techkesari,
     description:
       "An AI Development Company where efficiency meets innovation. Providing wide array of cutting edge and bespoke AI solutions to the customers. ",
-    year: "Ongoing",
+    year: "2024",
     link: "https://www.techkesari.com/",
     tags: ["NextJS", "GSAP", "Freelancing"],
   },

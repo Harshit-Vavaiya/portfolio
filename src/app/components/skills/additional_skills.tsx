@@ -30,7 +30,7 @@ export default function AdditionalSkills(props: any) {
     <section className="h-auto w-[85vw] m-auto text-3xl flex flex-col text-center gap-[20px] tracking-tight">
       <div className="text-4xl text-center font-medium">Additional Skills</div>
       <span className="text-base text-gray-400 italic">
-        Jack of all trades master of hidden, <br />
+        Jack of all trades master of none, <br />
         though oftentimes better than master of one
       </span>
 
