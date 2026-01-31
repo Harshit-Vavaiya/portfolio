@@ -1,16 +1,9 @@
 import type { Metadata } from "next";
-import { Poppins } from "next/font/google";
 import "./globals.css";
-import Cursor from "./components/cusror/cursor";
-
-const poppins = Poppins({
-  weight: ["400", "500", "600", "700", "800", "900"],
-  subsets: ["latin"],
-});
 
 export const metadata: Metadata = {
-  title: "Harshit Vavaiya ",
-  description: "HV's personal website!",
+  title: "Blank",
+  description: "Blank Next.js app",
 };
 
 export default function RootLayout({
@@ -20,13 +13,7 @@ export default function RootLayout({
 }) {
   return (
     <html lang="en">
-      <head>
-        {/*         <base href="{{https://harshit-vavaiya.github.io/}}" /> */}
-      </head>
-      <body className={poppins.className}>
-        <Cursor></Cursor>
-        {children}
-      </body>
+      <body>{children}</body>
     </html>
   );
 }

@@ -58,8 +58,7 @@ const data = [
 
 export const Highlights: React.FC<any> = (props: any) => {
   return (
-    <section className="h-auto w-[85vw]  m-auto flex flex-col gap-[60px] tracking-tight">
-      <div className="text-4xl text-center font-medium">Highlights</div>
+    <section className="h-auto w-full m-auto flex flex-col gap-[60px] tracking-tight">
       <div className="flex flex-col gap-[60px]">
         {data.map((highlight, index) => {
           return (
@@ -82,6 +81,15 @@ interface HighlightCardProps {
   description: string;
   link: string; // Change here to use description directly
 }
+export const tagColors = [
+  "#D2FF72",
+  "#FF72F1",
+  "#72FFAA",
+  "#7BDFFF",
+  "#FF7272",
+  "#FFD772",
+  "#DA72FF",
+];
 
 const HighlightCard: React.FC<HighlightCardProps> = ({
   image,
@@ -91,23 +99,13 @@ const HighlightCard: React.FC<HighlightCardProps> = ({
   year,
   description,
 }) => {
-  const colors = [
-    "#D2FF72",
-    "#FF72F1",
-    "#72FFAA",
-    "#7BDFFF",
-    "#FF7272",
-    "#FFD772",
-    "#DA72FF",
-  ];
-
   const [color, setColor] = useState("#D2FF72");
 
   const getColor = () => {
-    let curr = colors[Math.floor(Math.random() * colors.length)];
+    let curr = tagColors[Math.floor(Math.random() * tagColors.length)];
 
     while (curr === color) {
-      curr = colors[Math.floor(Math.random() * colors.length)];
+      curr = tagColors[Math.floor(Math.random() * tagColors.length)];
     }
 
     setColor(curr);
@@ -129,9 +127,9 @@ const HighlightCard: React.FC<HighlightCardProps> = ({
           {/* Description */}
           <div className="text-sm w-[97%] md:text-xs">
             {tags.map((tag, index) => {
-              let i = index % colors.length;
+              let i = index % tagColors.length;
               return (
-                <span key={tag} style={{ color: colors[i] }}>
+                <span key={tag} style={{ color: tagColors[i] }}>
                   {"#" + tag}
                 </span>
               );
