@@ -1,5 +1,6 @@
 import Navbar from "../components/navbar";
 import { getAllBlogPosts } from "../../lib/blog";
+import Footer from "../components/footer";
 
 export default function BlogIndexPage() {
   const posts = getAllBlogPosts();
@@ -42,13 +43,7 @@ export default function BlogIndexPage() {
         </ul>
       </section>
 
-      <footer className="footer">
-        <div className="footer__links">
-          <a href="#">↗ rss</a>
-          <a href="#">↗ github</a>
-          <a href="#">↗ view source</a>
-        </div>
-      </footer>
+      <Footer />
     </main>
   );
 }

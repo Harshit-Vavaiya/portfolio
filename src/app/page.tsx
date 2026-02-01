@@ -1,5 +1,6 @@
 import Navbar from "./components/navbar";
 import { getAllBlogPosts } from "../lib/blog";
+import Footer from "./components/footer";
 
 export default function Home() {
   const posts = getAllBlogPosts().slice(0, 3);
@@ -20,6 +21,7 @@ export default function Home() {
       </section>
 
       <section className="list" aria-label="posts">
+        <h2 className="list__title my-4 text-xl font-bold">Recent Posts</h2>
         <ul className="post-list">
           {posts.map((p) => (
             <li key={p.slug} className="post-list__item">
@@ -34,31 +36,7 @@ export default function Home() {
         </ul>
       </section>
 
-      <footer className="footer">
-        <div className="footer__links">
-          <a
-            href="https://github.com/Harshit-Vavaiya"
-            target="_blank"
-            rel="noreferrer"
-          >
-            ↗ github
-          </a>
-          <a
-            href="https://www.linkedin.com/in/harshitvavaiya"
-            target="_blank"
-            rel="noreferrer"
-          >
-            ↗ linkedin
-          </a>
-          <a
-            href="https://harshitvavaiya.medium.com/"
-            target="_blank"
-            rel="noreferrer"
-          >
-            ↗ medium
-          </a>
-        </div>
-      </footer>
+      <Footer></Footer>
     </main>
   );
 }
