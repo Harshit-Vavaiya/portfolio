@@ -1,43 +1,32 @@
 import Navbar from "./components/navbar";
-
-const posts = [
-  {
-    date: "April 9, 2024",
-    title: "Embracing Vim: The Unsung Hero of Code Editors",
-  },
-  {
-    date: "April 8, 2024",
-    title: "Spaces vs. Tabs: The Indentation Debate Continues",
-  },
-  {
-    date: "April 7, 2024",
-    title: "The Power of Static Typing in Programming",
-  },
-];
+import { getAllBlogPosts } from "../lib/blog";
 
 export default function Home() {
+  const posts = getAllBlogPosts().slice(0, 3);
+
   return (
     <main className="container-page">
       <Navbar />
 
       <section className="hero" aria-label="intro">
-        <h1 className="hero__title">Harshit Vavaiya</h1>
+        <h1 className="hero__title">Hi, I'm Harshit</h1>
         <p className="hero__desc">
-          I&apos;m a Vim enthusiast and tab advocate, finding unmatched
-          efficiency in Vim&apos;s keystroke commands and tabs&apos; flexibility
-          for personal viewing preferences. This extends to my support for
-          static typing, where its early error detection ensures cleaner code,
-          and my preference for dark mode, which eases long coding sessions by
-          reducing eye strain.
+          I&apos;m a developer and writer. I enjoy creating websites with a
+          focus on user experience and storytelling. I am also passionate about
+          theoretical concepts in computer science, mathematics and physics. I
+          write about various topics including programming, technology,
+          politics, philosophy and more.
         </p>
       </section>
 
       <section className="list" aria-label="posts">
         <ul className="post-list">
           {posts.map((p) => (
-            <li key={p.title} className="post-list__item">
-              <span className="post-list__date">{p.date}</span>
-              <a className="post-list__title" href="#">
+            <li key={p.slug} className="post-list__item">
+              <span className="post-list__date">
+                {p.date} · {p.readingTimeMinutes} min read
+              </span>
+              <a className="post-list__title" href={`/blog/${p.slug}`}>
                 {p.title}
               </a>
             </li>
@@ -47,9 +36,27 @@ export default function Home() {
 
       <footer className="footer">
         <div className="footer__links">
-          <a href="#">↗ rss</a>
-          <a href="#">↗ github</a>
-          <a href="#">↗ view source</a>
+          <a
+            href="https://github.com/Harshit-Vavaiya"
+            target="_blank"
+            rel="noreferrer"
+          >
+            ↗ github
+          </a>
+          <a
+            href="https://www.linkedin.com/in/harshitvavaiya"
+            target="_blank"
+            rel="noreferrer"
+          >
+            ↗ linkedin
+          </a>
+          <a
+            href="https://harshitvavaiya.medium.com/"
+            target="_blank"
+            rel="noreferrer"
+          >
+            ↗ medium
+          </a>
         </div>
       </footer>
     </main>
