@@ -168,6 +168,27 @@ html[data-theme="light"] .top-nav__link {
   margin: 0;
 }
 
+.highlight__tags {
+  background-color: var(--bg);
+}
+
+.highlight__meta {
+  color: var(--muted);
+}
+
+.highlight__desc {
+  color: var(--muted-2);
+}
+
+.highlight__tag {
+  display: inline-block;
+  padding: 1px 10px;
+  border-radius: 999px;
+  color: #0b0b0b; /* dark text on colored chip for readability */
+  font-weight: 600;
+  font-size: 13px;
+}
+
 .hero__tags {
   margin: 10px 0 0;
   color: var(--muted-2);

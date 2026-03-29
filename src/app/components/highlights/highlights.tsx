@@ -125,28 +125,34 @@ const HighlightCard: React.FC<HighlightCardProps> = ({
         </div>
         <div className="flex flex-col gap-[20px] md:w-[50%] lg:w-[40%]  md:gap-[10px]">
           {/* Description */}
-          <div className="text-sm w-[97%] md:text-xs">
+          <div className="text-sm w-[97%] md:text-xs highlight__tags p-0 flex flex-wrap gap-2">
             {tags.map((tag, index) => {
               let i = index % tagColors.length;
               return (
-                <span key={tag} style={{ color: tagColors[i] }}>
-                  {"#" + tag}
+                <span
+                  key={tag}
+                  className="highlight__tag"
+                  style={{ backgroundColor: tagColors[i] }}
+                >
+                  {tag}
                 </span>
               );
             })}
           </div>
-          <div className="flex items-center justify-stretch w-full text-[#d7d7d7]">
+          <div className="flex items-center justify-stretch w-full highlight__meta">
             <a
               href={link}
               className="text-3xl font-bold flex-1 hover:underline"
             >
               {title}
             </a>
-            <span className="text-md font-extralight flex-1 text-right">
+            <span className="text-md font-extralight flex-1 text-right highlight__desc">
               {year}
             </span>
           </div>
-          <div className="text-xl font-light text-[#d7d7d7]">{description}</div>
+          <div className="text-xl font-light highlight__desc">
+            {description}
+          </div>
         </div>
       </div>
     </>

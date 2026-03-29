@@ -17,7 +17,15 @@ export default function BlogIndexPage() {
       <section className="list" aria-label="posts">
         <ul className="post-list">
           {posts.map((p) => (
-            <li key={p.slug} className="post-list__item">
+            <li key={p.slug} className="flex flex-col gap-2">
+              <div className="post-list__content">
+                <a className="post-list__title" href={`/blog/${p.slug}`}>
+                  {p.title}
+                </a>
+                {p.description ? (
+                  <div className="post-list__desc">{p.description}</div>
+                ) : null}
+              </div>
               <span className="post-list__date">
                 {p.date} · {p.readingTimeMinutes} min read
               </span>
@@ -30,14 +38,6 @@ export default function BlogIndexPage() {
                     .join(" · ")}
                 </div>
               ) : null}
-              <div className="post-list__content">
-                <a className="post-list__title" href={`/blog/${p.slug}`}>
-                  {p.title}
-                </a>
-                {p.description ? (
-                  <div className="post-list__desc">{p.description}</div>
-                ) : null}
-              </div>
             </li>
           ))}
         </ul>

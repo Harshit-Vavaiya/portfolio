@@ -11,11 +11,15 @@ export default function ProjectsPage() {
         className="hero text-center flex flex-col items-center"
         aria-label="projects"
       >
-        <h1 className="hero__title">Projects</h1>
+        <h2 className="hero__title">Tools and Technologies</h2>
         <p className="hero__desc">
-          A few things I&apos;ve built. My main skills include web development,
-          UI/UX design, cloud architecture, writing, and more.🥷
+          ReactJS, TypeScript, Next.js, Tailwind CSS, Python, Node.js, Express,
+          MongoDB, Git, Docker, Kubernetes, UI/UX, Three.js, GSAP, Visual
+          Design, System Design.
         </p>
+        <div className="h-[20px] my-10"></div>
+        <h1 className="hero__title">Projects</h1>
+        <p className="hero__desc">A few things I&apos;ve built.</p>
       </section>
 
       <section className="highlights" aria-label="highlights">
