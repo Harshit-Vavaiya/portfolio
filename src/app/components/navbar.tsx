@@ -67,11 +67,11 @@ export default function Navbar() {
           <a href="/" className="top-nav__link">
             home
           </a>
-          <a href="/blog" className="top-nav__link">
-            blog
-          </a>
           <a href="/projects" className="top-nav__link">
             projects
+          </a>
+          <a href="/blog" className="top-nav__link">
+            blog
           </a>
         </nav>
       </div>

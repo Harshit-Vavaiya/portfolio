@@ -16,11 +16,16 @@ export default function Home() {
           focus on user experience and storytelling. I am also passionate about
           theoretical concepts in computer science, mathematics and physics. I
           write about various topics including programming, technology,
-          politics, philosophy and more.
+          literature, and whatever that interests me at the moment.
+        </p>
+        <p>
+          {" "}
+          Did you know? If it is possible in your mind, then it is possible in
+          reality.
         </p>
       </section>
 
-      <section className="list" aria-label="posts">
+      {/* <section className="list" aria-label="posts">
         <h2 className="list__title my-4 text-xl font-bold">Recent Posts</h2>
         <ul className="post-list">
           {posts.map((p) => (
@@ -34,7 +39,7 @@ export default function Home() {
             </li>
           ))}
         </ul>
-      </section>
+      </section> */}
 
       <Footer></Footer>
     </main>
